@@ -18,17 +18,23 @@ function abbreviateNumber(value) {
 let title = document.querySelector('h1');
 
 gameoflife = new GameOfLife({
-    speed: 0, size: 2, zoom: 5,
-    mergeColor: true,
-    
-    rate: 0.5,
+    speed: 1,
+    size: 2, zoom: 3,
+    merge: true,
 
+    background: 'black',
+    
+    rate: 0.25,
+
+    enableDecay: true,
+    decay: 0.01,
+    
     pause: false,
 
-    grid: true,
-    gridColor: 'black',
+    grid: false,
+    gridColor: {},
 
-    selfSpawning: true,
+    selfSpawning: false,
     selfSpawningRate: 0.000000000000001,
     
     enableRandomColor: true,
